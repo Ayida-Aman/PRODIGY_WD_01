@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* styling the nav bar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* box-shadow: 0 0 10px 10px #ccc9c9; */
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+}
+.nav a , .icons a , .logo a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+/* .nav a:hover , .icons a:hover , .logo a:hover{
+    color: rgb(185, 144, 151);
+} */
+.logo a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/* styling the home page */
+
+.home{
+    background:url('/images/background.jpg') rgba(0, 0, 0, 1.6) no-repeat;
+    background-size:cover;
+    height: 700px;
+    /* position: absolute; */
+}
+.body{
+    padding: 150px;
+    width: 550px;
+}
+.body p{
+    margin-top: 10px;
+}
+.body .body-header{
+    font-size: 50px;
+    font-weight: bold;
+}
+.body :nth-child(2), .body :nth-child(3){
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(46, 43, 43);
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(46, 43, 43);
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background-color: pink;
+    box-shadow: 0 0 10 10 #ada8a8;
+    color: black;
+}
+.nav-bar #toggler{
+    display: none;
+}
+.nav-bar .fa-bars {
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+/* styling the about page */
+
+.about{
+    padding: 10px;
+}
+.about h1{
+    height: 50px;
+    width: 90%;
+    background-color: pink;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    left: 5%;
+}
+.about span{
+    color: rgb(240, 15, 52);
+}
+.about img{
+    height: 300px;
+    width: 400px;
+    margin-top: 60px;
+}
+.about .about-body{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.about .detail{
+    margin-top: 60px;
+    color: #333;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #e9dede;
+    padding: 30px;
+}
+.card{
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin:10px ;
+    box-shadow: 0 0 10px 10px #dddada;
+}
+.icon i{
+    font-size: 50px;
+}
+
+/* styling the product page */
+
+.products h1, .review h1 , .contact h1{
+    height: 50px;
+    width: 90%;
+    background-color: pink;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    left: 5%;
+    margin-top: 10px;
+}
+.products span , .review span , .contact span{
+    color: rgb(240, 15, 52);
+}
+.item img{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.item {
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 10px 10px 20px 0;
+    box-shadow: 0 0 10px 10px #dddada;
+    transition: 1s;
+}
+.item:hover{
+    transform: scale(1.1);
+    z-index: 3;
+}
+.item i{
+    float: inline-end;
+    color: pink;
+    margin: 30px 5px 0px 0px;
+    font-size: 30px;
+}
+.item i:hover{
+    color: rgb(216, 17, 50);
+}
+.items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 40px;
+}
+.products-body{
+    text-align: center;
+    padding-top: 15px;
+}
+.products-body h2{
+    color: rgb(230, 13, 49);
+}
+
+/* stylilng the customer's review page */
+
+.reviews{
+    display: flex;
+    margin: 20px 30px 30px 75px;
+    gap: 15px;
+}
+.customer-review-card{
+    height: 150px;
+    width: 30%;
+    padding: 10px;
+    box-shadow: 0 0 10px 10px rgb(230, 224, 224);
+    border-radius: 10px;
+}
+.user-name{
+    display: flex;
+    margin-top: 10px;
+}
+.user-name span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.user-name h3{
+    color: rgb(219, 25, 58);
+    font-weight: bold;
+}
+.customer-review-card .checked{
+    color: orange;
+    margin-bottom: 10px;
+}
+.customer-review-card .unchecked{
+    color: black;
+}
+
+/* styling the contact page */
+
+.contact-form{
+    background-image: url(images/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: 700px;
+    background-size: 40%;
+    background-color: whitesmoke;
+    margin:10px 75px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 30%;
+    padding: 20px 15px 20px 10px;
+    box-shadow: 0 0 10px 10px rgb(230, 224, 224);
+    border-radius: 10px;
+    margin: 20px 0 0 100px;
+}
+form label{
+    /* margin-top: 10px; */
+    font-weight: bold;
+}
+form input{
+    border: 1px solid pink;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+form textarea{
+    border: 1px solid pink;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* styling the footer */
+
+.columns a , .columns p{
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 198, 198);
+}
+.columns h3{
+    color: white;
+    margin: 20px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(121, 104, 122);
+    padding-bottom: 15px;
+}
+
+/* styling the favourite page */
+
+.card-container{
+    position: absolute;
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-300px);
+    background-color: pink;
+    border-radius: 10px;
+    color: rgb(36, 31, 31);
+}
+.card-container h2{
+    margin-top: 40px;
+}
+.card-container h3{
+    color: #776c6c;
+}
+
+/* styling the cart page */
+
+.table1{
+    width: 60%;
+    margin: 50px 200px;
+    border-collapse: collapse;
+}
+table .table-head{
+    background-color: pink;
+    height: 35px;
+    color: #333;
+}
+.product-details span{
+    color: red;
+}
+table tr td img{
+    height: 100px;
+    width: 100px;
+}
+table .product-cart{
+    display: flex;
+}
+.table1 tr td{
+    text-align: center;
+}
+table tr td input{
+    width: 40px;
+}
+
+
+.table2{
+    width: 40%;
+    margin: 20px 560px;
+    border-top: 5px solid pink;
+}
+.checkout-btn{
+    background-color: pink;
+    width: 500px;
+    float: right;
+    color: #776c6c;
+}
+
+/* styling the login page */
+
+#Account-page{
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.login-card{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-150px);
+    margin-top: -100px;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+input[type=password], input[type=text], input[type=email]{
+    width: 100%;
+    margin: 20px 0;
+    background-color: transparent;
+    border-bottom: 2px solid pink;
+    outline: none;
+}
+input{
+    border: none;
+}
+.login-btn{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    color: #a19797;
+    font-size: large;
+}
+.login-card a{
+    text-decoration: none;
+}
+.login-card h1, label{
+    color: #776c6c;
+}
+
+
+/* media queries */
+
+@media (max-width:768px){
+    .nav-bar .fa-bars{
+        display: block;
+    }
+    .nav-bar .nav{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #eee;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1s;
+    }
+    .nav-bar #toggler:checked ~ .nav{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+    }
+    .nav-bar .nav a{
+        margin: 1.5 rem;
+        padding: 1.5rem;
+        background-color: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+    .cards{
+        grid-template-columns: auto auto;
+    }
+    .items{
+        display: block;
+        margin-left: 100px;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .customer-review-card{
+        height: fit-content;
+        width: 100%;
+        margin-left: -30px;
+    }
+    form{
+        width: 70%;
+    }
+    .contact-form{
+        background: none;
+    }
+    .body{
+        width: fit-content;
+        padding: 150px 100px;
+    }
+    .table1{
+        width: 90%;
+        margin: 20px 10px;
+    }
+    .table2{
+        margin: 20px 70px ;
+    }
+    .login-card{
+        margin-top: -170px;
+    }
+}
+@media (max-width:600px){
+    .about .about-body{
+        flex-direction: column;
+    }
+    .cards{
+        grid-template-columns: auto;
+    }
+    .items{
+        margin-left: 50px;
+    }
+    .item{
+        margin-bottom: 50px;
+    }
+    form{
+        margin-left: 10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .card-container{
+        width: 500px;
+        margin-left: 45px;
+    }
+    .table2{
+        margin: 0 10px;
+    }
+}

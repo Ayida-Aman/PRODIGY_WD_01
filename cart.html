@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <div class="logo">
+            <a href="#">EBA</a>
+        </div>
+        <div class="nav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#product">Products</a>
+            <a href="index.html#review">Review</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="icons">
+            <a href="favourite.html" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+        </div>
+    </div>
+    <table class="table1">
+        <tr class="table-head">
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <tr>
+            <td class="product-cart"><img src="images/custured.jpg" alt="">
+                <div class="product-details">
+                    <h3>Custured Pie</h3>
+                    <p>price: 15 birr</p>
+                    <span>Remove</span>
+                </div>
+            </td>
+            <td><input type="number" name="quantity" id="" value="2"></td>
+            <td>30 Birr</td>
+        </tr>
+        <tr>
+            <td class="product-cart"><img src="images/moya.jpg" alt="">
+                <div class="product-details">
+                    <h3>Moya Biscuit</h3>
+                    <p>price: 15 birr</p>
+                    <span>Remove</span>
+                </div>
+            </td>
+            <td><input type="number" name="quantity" id="" value="3"></td>
+            <td>45 Birr</td>
+        </tr>
+        <tr>
+            <td class="product-cart"><img src="images/hijabs.jpg" alt="">
+                <div class="product-details">
+                    <h3>Custured Pie</h3>
+                    <p>price: 500 birr</p>
+                    <span>Remove</span>
+                </div>
+            </td>
+            <td><input type="number" name="quantity" id="" value="1"></td>
+            <td>500 Birr</td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td><p>SubTotal</p></td>
+            <td>575 Birr</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>10 Birr</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>585 Birr</td>
+        </tr>
+        <tr><td><button class="checkout-btn">Proceed To CheckOut</button></td></tr>
+    </table>
+</body>
+</html>
